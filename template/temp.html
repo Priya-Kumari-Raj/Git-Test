@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Employee Payroll Application Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+	<h3> Employee Login Details</h3> 
+		<div class="form-control">
+			<label for="empid" id="label-empid">
+				Employee ID<span style="color:darkolivegreen;font-weight:bold">*</span>
+			</label>
+
+			<!-- Input Type Text -->
+			   <input type="text" maxlength="5"
+                id="empid" pattern="[E][0-9]" required/>
+
+		</div>
+
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name*
+			</label>
+
+			<!-- Input Type Text -->
+				<input type="text" maxlength="20" minlength="5"
+				id="name"
+				placeholder="Enter your name" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="state" id="label-state">
+				State*
+			</label>
+
+			<!-- Input Type Text-->
+			
+				<select name="state" id="state">
+				<option value="Select">Select</option>
+				<optgroup label="Karanatak">
+				<option value="Bagalkot">Bagalkot</option>
+				<option value="Ballari (Bellary)">Ballari (Bellary)</option>
+				<option value="Mysuru (Mysore)">Mysuru (Mysore)</option>
+				<option value="Ramanagara">Ramanagara</option>
+				</optgroup>
+				<optgroup label="maharastra">
+				<option value="Mumbai">Mumbai</option>
+				<option value="Pune">Pune</option>
+				<option value="Nagpur">Nagpur</option>
+				<option value="Thane">Thane</option>
+				</optgroup>
+				<optgroup label="Andhra Pradesh">
+				<option value="Visakhapatnam">Visakhapatnam</option>
+				<option value="Vijayawada">Vijayawada</option>
+				<option value="Guntur">Guntur</option>
+				<option value="Nellore">Nellore</option>
+				</optgroup>	
+				
+				<option value="other">Other</option>
+				
+			</select>
+			</div>
+
+		<div class="form-control">
+			<label for="salary" id="label-salary">
+				Salary*
+			</label>
+
+			<!-- Input Type Number -->
+			<input type="number"
+				id="salary"
+				placeholder="Enter your Salary" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="grade" id="label-grade">Grade*</label>
+			<input type="radio" name ="grade" value="" required/>A
+                       <input type="radio" name ="grade" value="" required/>B
+                       <input type="radio" name ="grade" value=""required/>C
+			
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="Select">Select</option>
+				<option value="Grade A">Grade A-Salary more than 6lakhs</option>
+				<option value="Grade B">Grade B-Salary between 6-10 lakhs</option>
+				<option value="Grade C">Grade C-Salary between 10+ to 19 lakhs
+				</option>
+				
+				<option value="other">Other</option>
+			</select>
+			</div>
+
+		<div class="form-control">
+			<label for="datetime">(date and time)*:</label>
+			<input type="datetime-local" id="datetime" name="datetime">
+
+		</div>
+
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+
+		<button type="cancel" value="cancel">
+			Cancel
+		</button>
+		</form>
+		<footer>
+  			<p><i>&copy2022 Copyright.All rights reserved</i></p>
+		 </footer>
+</body>
+
+</html>
